@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主脑生产计划程序v0.1</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="calculator_page.js"></script>
+    <!-- <script src="jquery-3.5.1.js"></script> -->
+    <link rel="stylesheet" href="dsp_assist.css">
+</head>
+
+<body>
+    <div class="bg-image"></div>
+    <div class="container">
+        <h1 class="my-md-5">主脑生产计划程序 <small>v0.1</small></h1>
+        <div class="form-row">
+            <div class="input-group col-md-4 mb-2">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">产物</span>
+                </div>
+                <select name="products" class="form-control" placeholder="选择产物种类" id="product-select"></select>
+            </div>
+            <div class="input-group col-md-4 mb-2">
+                <input type="number" name="production rate" class="form-control" placeholder="输入所需产量"
+                    id="product-rate" value="1">
+                <div class="input-group-append">
+                    <span class="input-group-text">每秒</span>
+                </div>
+            </div>
+            <div class="offset-md-1 col-md-3">
+                <button type="button" class="btn btn-primary w-100" id="cal-btn">计算生产数据</button>
+            </div>
+        </div>
+        <div class="row">
+        </div>
+        <div id="product-tree" class="container">
+        </div>
+        <div id="product-table"></div>
+        <!-- <div style="clear: both;"></div> -->
+        <div class="form-row mt-5">
+            <div class="offset-md-11 col-md-1">
+                <button type="button" class="btn btn-info w-100" id="show-formula-btn">显示配方</button>
+            </div>
+        </div>
+        <div id="formula-table"></div>
+    </div>
+</body>
+<!-- <script src="calculator_page.js"></script> -->
+
+</html>

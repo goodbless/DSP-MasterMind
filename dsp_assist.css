@@ -1,0 +1,117 @@
+body {
+    background-color: #4b4b4b;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+}
+
+.bg-image {
+    background: url("img/201217134903987_u162815.jpg") center top;
+    background-size: cover;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    filter: blur(4px) brightness(50%);
+}
+
+.container {
+    font-size: large;
+}
+
+#product-tree {
+    /* padding: 5px; */
+    color: black;
+}
+
+#product-table, #formula-table {
+    margin: 15px 0px;
+}
+
+#product-table h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    /* margin-left: 0.5rem; */
+}
+
+.box {
+    /* color: white; */
+    /* float           : left; */
+    display: inline-block;
+    margin          : 4px;
+    padding         : 4px 8px;
+    background-color: rgb(138, 126, 103);
+    opacity: 0.9;
+    line-height     : 1.5;
+    font-size    : medium;
+    transition      : all .5s;
+}
+
+.box:hover {
+    background-color: rgb(243, 233, 96);
+    box-shadow      : 0 0px 8px 0 rgba(255, 255, 255, 0.50), 0 0px 20px 0 rgba(255, 255, 255, 0.2);
+    color: black;
+    opacity: 1;
+}
+
+.box:hover .box-title{
+    text-shadow: none;
+}
+
+.material {
+    /* margin-left: 0.5em; */
+    color        : inherit;
+    margin-right : 0.25em;
+    padding-left : 2px;
+    padding-right: 4px;
+    /* font-size : 0.8rem; */
+    border-radius: 2px;
+
+}
+
+.input {
+    /* background-color: rgb(153, 226, 153); */
+}
+
+.output {
+    /* background-color: rgb(171, 200, 255) */
+}
+
+.optional-formula {
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.optional-formula:hover {
+    color: rgb(61, 28, 206);
+}
+
+.box-title {
+    font-size: large;
+    font-weight: bold;
+    text-shadow: rgba(0, 0, 0, 0.596) 2px 2px 4px;
+}
+
+.final-product {
+    background-color: rgb(79, 94, 179);
+}
+
+.by-product {
+    background-color: rgb(145, 49, 86);
+}
+
+.intermediate {
+    background-color: rgb(111, 175, 111);
+}
+
+.raw-material {
+    background-color: rgb(46, 153, 153);
+}
+
+
+
+.foot {
+    /* margin-top: 20%; */
+}
